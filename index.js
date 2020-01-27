@@ -34,7 +34,7 @@ function pushTrushDay() {
         let weekday = date.getDay();
         let weekdayJpn = ['日', '月', '火', '水', '木', '金', '土'][weekday];
         let weekNumber = getWeekNumber(date);
-        let text = date.getMonth() + '/' + date.getDate();
+        let text = (date.getMonth() + 1) + '/' + date.getDate();
         text += ' 第' + weekNumber + weekdayJpn + '曜日 ';
         text += getTrush(weekdayJpn, weekNumber);
         const message = {
